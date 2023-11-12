@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Web Fundamentals Workshop</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		
+		<!-- Wrapper-->
+			<div id="wrapper">
+
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#" class="icon solid fa-home"><span>Home</span></a>
+						<a href="#introduction" class="icon solid fa-folder"><span>背景</span></a>
+						<a href="#chart1" class="icon solid fa-folder"><span>Line&Scatter</span></a>
+						<a href="#chart2" class="icon solid fa-folder"><span>Bar</span></a>
+						<a href="#chart3" class="icon solid fa-folder"><span>Pie</span></a>
+						<a href="#insight" class="icon solid fa-folder"><span>洞察</span></a>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Me -->
+							<article id="home" class="panel intro">
+								<header>
+									<h1>112502522 陳立軒</h1>
+									<p>Data Viz - 1121</p>
+								</header>
+								<a href="#introduction" class="jumplink pic">
+									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
+									<img src="images/me.jpg" alt="" />
+								</a>
+							</article>
+
+						<!-- Introduction -->
+							<article id="introduction" class="panel">
+								<header>
+									<h2>背景簡介:</h2>
+								</header>
+								<p>
+									在現今國際間交通來往發達的時代，跨國工作者的人數正日益增加，
+									跨國工作者的人數多少能夠反映其國家的發達程度，而外籍移工即是台灣的跨國工作者中的一大部分，
+									本圖表旨在透過各項數據紀錄在台外籍移工人數，使用D3.js資料視覺化工具製作。
+								</p>
+								<p>
+									資料來源:勞動部全球資訊網
+								</p>
+							</article>
+
+						<!-- Chart1 -->
+							<article id="chart1" class="panel">
+								<header>
+									<h2>桃園市109至111年各月外籍移工總人數變化</h2>
+								</header>
+								<p>
+									(統計期間:109年1月至111年12月)
+								</p>
+								<div id="Graph1"></div>
+							</article>
+
+						<!-- Chart2 -->
+							<article id="chart2" class="panel">
+								<header>
+									<h2>桃園市109至111年各年外籍移工總人數變化</h2>
+								</header>
+								<p>
+									(統計期間:109年至111年年底)
+								</p>
+								<div id="Graph2"></div>
+							</article>
+
+						<!-- Chart3 -->
+							<article id="chart3" class="panel">
+								<header>
+									<h2>桃園市109至111年各國在台外籍移工統計</h2>
+								</header>
+								<p>
+									(統計期間:109年至111年)
+								</p>
+								<div id="Graph3"></div>
+							</article>
+						
+						<!-- Introduction -->
+							<article id="insight" class="panel">
+								<header>
+									<h2>洞察:</h2>
+								</header>
+								<p>
+									據圖表可得知，台灣近三年的外籍移工人數在前兩年半時並無較大的變動，而在111後半年時卻出現了大幅度的增長，
+									漲幅人數約達一萬，可能是因新冠疫情影響減弱而導致的趨勢；而雖然台灣的外籍移工總數大致呈現攀升的趨勢，
+									社福移工卻有逐年減少的現象；在各國移工占比的方面，各國的移工總數都未減少，
+									不過越南與泰國移工的占比在逐漸上升，反之，菲律賓和印尼移工的占比處於下降的走勢。
+								</p>
+							</article>
+
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="https://cdn.plot.ly/plotly-2.26.0.min.js"></script>
+        	<script src="chart1/data1.js"></script>
+			<script src="chart1/main1.js"></script>
+			<script src="chart2/data2.js"></script>
+			<script src="chart2/main2.js"></script>
+			<script src="chart3/data3.js"></script>
+			<script src="chart3/main3.js"></script>
+	</body>
+</html>
